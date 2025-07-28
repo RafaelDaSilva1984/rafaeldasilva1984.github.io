@@ -1,0 +1,126 @@
+.container {
+  max-width: 75rem;
+  padding: 2.5rem 1.25rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 6.25rem;
+}
+
+.experiencia .subtitulo {
+  color: #e0e0e0;
+}
+
+.experiencia-texto {
+  font-size: 1.5rem;
+  line-height: 1.33;
+  max-width: 40ch;
+  margin-bottom: 4rem;
+  color: #525252;
+}
+
+.experiencia-texto strong {
+  color: #141414;
+}
+
+.empresa {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 1.25rem;
+  background-color: #e3e3e3;
+  margin-bottom: 1.25rem;
+  position: relative;
+  z-index: 1;
+  gap: 0.75rem 1.5rem;
+}
+
+.empresa::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 1rem;
+  left: -0.25rem;
+  width: 0.25rem;
+  height: 1.5rem;
+  background: linear-gradient(#552586, #b589d6);
+  z-index: -1;
+}
+
+.empresa-ano {
+  width: 8rem;
+  text-align: end;
+  position: absolute;
+  top: 0.95rem;
+  left: -11em;
+  font-size: 0.875rem;
+  color: #525252;
+}
+
+.empresa-titulo {
+  font-size: 1.5rem;
+  line-height: 1.1;
+  font-weight: bold;
+  color: #141414;
+}
+
+.empresa-texto {
+  font-size: 0.875rem;
+  line-height: 1.33;
+  color: #525252;
+}
+
+.empresa-habilidades {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-content: start;
+}
+
+.empresa-habilidades li {
+  font-size: 0.875rem;
+  line-height: 1.33;
+  background-color: #ffffff;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  color: #141414;
+}
+
+@media (max-width: 900px) {
+  .experiencia {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  .experiencia .subtitulo {
+    color: #141414;
+  }
+
+  .experiencia-texto {
+    font-size: 1.25rem;
+  }
+
+  h2.subtitulo {
+    font-size: 3rem;
+    text-align: center;
+  }
+  p.experiencia-texto {
+    max-width: initial;
+    text-align: center;
+  }
+  .empresa-ano {
+    position: static;
+    text-align: center;
+    margin-bottom: 1rem;
+    order: 1;
+    width: initial;
+    text-align: left;
+  }
+  .empresa-ano::before {
+    content: "Ano: ";
+  }
+}
+
+@media (max-width: 400px) {
+  .empresa {
+    grid-template-columns: 1fr;
+  }
+}
