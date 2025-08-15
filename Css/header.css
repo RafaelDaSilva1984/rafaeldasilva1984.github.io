@@ -6,37 +6,36 @@
   justify-content: space-between;
   align-items: center;
 }
-
 .header-logo img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 15rem;
-  border: 3px solid #c5c5c5;
+  display: none; /* esconde a imagem original */
 }
-
-.header-logo img:hover {
-  max-width: 100%;
-  height: auto;
-  border: 3px solid #552586;
+.header-logo {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  background-image: url("/assets/Photo Rafa.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 100%;
 }
-
+.header-logo:hover {
+  background-image: url("/assets/rafael-2025.jpg");
+}
 .header-menu {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
   justify-content: center;
 }
-
 .header-menu a {
   font-size: 1.5rem;
   line-height: 1.3;
   color: #141414;
   padding: 0.625rem 1.25rem;
   text-decoration: none;
-  display: block; 
-  
+  display: block;   
 }
-
 a.header-menu-link-e {
   color: #1151a9;
   font-size: 1.5rem;
@@ -45,11 +44,9 @@ a.header-menu-link-e {
 }
 a.header-menu-link-e:hover {
   color: #0057b9;
- 
- 
 }
 .header-menu a:hover {
-  color: #552586;
+  color: #552586;  
 }
 
 @media (max-width: 800px) {
