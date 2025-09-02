@@ -7,21 +7,17 @@
   align-items: center;
 }
 .header-logo img {
-  display: none; /* esconde a imagem original */
+  border-radius: 85%;
 }
 .header-logo {
   display: inline-block;
   width: 80px;
   height: 80px;
-  background-image: url("/assets/Photo Rafa.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  border-radius: 100%;
 }
-.header-logo:hover {
-  background-image: url("/assets/rafael-2025.jpg");
-}
+
 .header-menu {
   display: flex;
   gap: 1rem;
@@ -34,7 +30,7 @@
   color: #141414;
   padding: 0.625rem 1.25rem;
   text-decoration: none;
-  display: block;   
+  display: block;
 }
 a.header-menu-link-e {
   color: #1151a9;
@@ -46,7 +42,7 @@ a.header-menu-link-e:hover {
   color: #0057b9;
 }
 .header-menu a:hover {
-  color: #552586;  
+  color: #552586;
 }
 
 @media (max-width: 800px) {
@@ -55,5 +51,4 @@ a.header-menu-link-e:hover {
     gap: 2.5rem;
     padding: 1.25rem;
   }
-
-
+}
